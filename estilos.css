@@ -1,0 +1,170 @@
+*{
+	margin: 0;
+	padding: 0;
+	background: #F3F5FC;
+	font-family: 'Inter';
+	//*font-style: normal;*//
+}
+
+.contenedor{
+	width: 94%;
+	max-width: 1000px;
+	margin: 20px auto;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, auto);
+
+	grid-template-areas: "header header sidebar"
+						 "contenido contenido sidebar"
+					 	 "boton1 boton2 sidebar"
+					 	 " footer footer sidebar";
+	}
+
+.contenedor .header{
+	width: 20%;
+	grid-area: header;
+}
+
+
+.contenedor .contenido{
+	grid-area: contenido;
+}
+
+.contenedor .sidebar{
+	grid-area: sidebar;
+	border-radius: 24px;
+	border: none;	
+	background: white;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	}
+
+.text-input{
+	margin-left: 10%;
+	margin-top: 5%;
+	width: 80%;
+	height: 80%;
+	color: #0A3871;
+	font-size: 20px;
+	border: none;
+	outline: none;
+	resize: none;
+	text-transform: lowercase;
+	
+}
+
+.aviso{
+	width: 50%;
+	margin-top: 1%;
+	margin-left: 10%;
+	font-size: 12px;
+	color: #495057;
+}
+
+.mensaje{
+	
+	padding: 5%;
+	border: none;
+	outline: none;
+	resize: none;
+	display: none;
+	background: white;
+	font-size: 15px;
+	color: #0A3871;
+}
+
+.imgDer{
+	width: 70%;
+	margin-top: 25%;
+	margin-left: 3%;
+	background: white;
+	
+
+}
+
+.texto1{
+	margin-top: 10%;
+	margin-left: 5%;
+	margin-right: 5%;
+	text-align: center;
+	background: white;
+}
+
+.texto2{
+	margin-top: 5%;
+	margin-left: 5%;
+	margin-right: 5%;
+	text-align: center;
+	background: white;
+	color: #495057;
+}
+
+.btn-copiar{
+	justify-content: center;
+	padding: 15px;
+	margin-top: 20%;
+	width: 70%;
+	height: 11%;
+	border-radius: 24px;
+	background: #D8DFE8;
+	color: #0A3871;
+	display: none;
+}
+
+.contenedor .boton1{
+	height: 50px;
+	grid-area: boton1;
+}
+
+.btn-encriptar{
+	
+	margin-left: 15%;
+	width: 70%;
+	height: 100%;
+	border-radius: 24px;
+	background: #0A3871;
+	font-size: 15px;
+	color: white;
+}
+
+.contenedor .boton2{
+	height: 50px;
+	grid-area: boton2;
+}
+
+.btn-desencriptar{
+	
+	margin-left: 15%;
+	width: 70%;
+	height: 100%;
+	background: #D8DFE8;
+	border-radius: 24px;
+	font-size: 15px;
+	color: #0A3871;
+}
+
+.contenedor .footer{
+	grid-area: footer;
+}
+
+.pie-pag{
+	padding: 5px;
+	width: 100%;
+	margin-left: 50%;
+}
+
+@media screen and (max-width:650px){
+	.contenedor{
+		grid-template-areas: "header header header"
+						 	 "contenido contenido contenido"
+							 "sidebar sidebar sidebar"
+					 	 	 "boton1 boton2 boton2"
+					 	 	 "footer footer footer";
+
+	}
+}
+
+

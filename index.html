@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  
+  <meta charset="utf-8">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
+
+  <title>Challenge encriptar y desencriptar texto.</title>
+
+</head>
+
+<body>
+
+    <div class="contenedor">
+            
+      <header class="header">
+        <img class="logoImg" src="imagenes/logo.svg" alt="Logo Alura">
+      </header> 
+          
+        <main class="contenido">
+          <textarea class="text-input" type="text" onkeypress="return sololetras(event);" id="textoEncriptar" cols="16" rows="10" placeholder="Ingrese su texto aqui..."></textarea>
+          <!-- <input class="text-input" type="text" id="textoEncriptar" placeholder="Ingrese su texto aquí..."> -->
+          <p class="aviso">&#9888 Solo letras minúsculas y sin acentos.</p> 
+        </main>
+        
+        <aside class="sidebar">
+          
+            <img src="imagenes/muñeco.png" class="imgDer" id="nene">
+            <h1 class="texto1" id="txt1">Ningún mensaje fué encontrado!</h1>
+            <h4 class="texto2" id="txt2">Ingresa el texto que desees encriptar o desencriptar.</h4> 
+            <textarea class="mensaje" name="result" id="textoDesencriptado" cols="20" rows="15"></textarea>
+            <button class="btn-copiar" id="copiar" onclick="copiar()">Copiar</button>
+          
+        </aside>
+
+          <div class="boton1">
+          <button class="btn-encriptar" id="encriptar" onclick="encriptar()">Encriptar!</button>
+          </div>
+          
+          <div class="boton2">
+          <button class="btn-desencriptar" id="desencriptar" onclick="desencriptar()">Desencriptar!</button>
+          </div>
+
+        <footer class="pie-pag">
+          <h6>Genaro Hernández Pérez - Grupo 4 One Alura 2023</h6>
+        </footer>
+  
+    </div>
+
+</body>
+
+</html>
